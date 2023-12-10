@@ -1,0 +1,42 @@
+body {
+  background-image: url("https://img.freepik.com/premium-vector/magic-background-with-rainbow-mesh-multicolor-universe-banner-princess-colors-fantasy-gradient-backdrop-with-hologram-holographic-magic-background-with-fairy-sparkles-stars-blurs_121461-1472.jpg?w=900");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(228, 195, 224);
+  margin-top: 30px;
+  font-family: "PT Serif", serif;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: rgb(143, 145, 247);
+  text-shadow: 1px 2px 2px black;
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(143, 145, 247);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.weather-app-container {
+  background-color: rgb(165, 245, 242, 0.7);
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 20px;
+}
