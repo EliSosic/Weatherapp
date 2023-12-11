@@ -15,23 +15,34 @@
   <body>
     <div class="weather-app-container">
       <header>
-        <h1>✨Welcome to your fantasy weather app✨</h1>
+        <h1>🦄Welcome to your fantasy weather app🦄</h1>
         <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="sumbit" value="search" />
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="city-input"
+          />
+          <input type="sumbit" value="Search" class="input-button" />
         </form>
       </header>
 
       <main>
-        <div>
-          <h2>Trieste</h2>
-          <p>
-            Monday, 01.01.2023 <br />
-            Wind: 10 km/h <br />
-            Humidity: 50%
-          </p>
+        <div class="weather-data">
+          <div>
+            <h2>Trieste</h2>
+            <div class="weather-info">
+              <div class="date">Monday, 01.01.2023</div>
+              <div class="wind"><strong> Wind </strong>: 10 km/h</div>
+              <div class="humidity"><strong> Humidity </strong>: 50%</div>
+            </div>
+          </div>
+          <div class="emoji-temperature-container">
+            <span class="weather-emoji"> ☀️ </span>
+            <span class="temperature"> 25 </span>
+            <span class="temperature-unit"> °C </span>
+          </div>
         </div>
-        <div>☀️ 25 °C</div>
       </main>
 
       <footer>

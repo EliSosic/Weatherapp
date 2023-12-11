@@ -2,7 +2,7 @@ body {
   background-image: url("https://img.freepik.com/premium-vector/magic-background-with-rainbow-mesh-multicolor-universe-banner-princess-colors-fantasy-gradient-backdrop-with-hologram-holographic-magic-background-with-fairy-sparkles-stars-blurs_121461-1472.jpg?w=900");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgb(228, 195, 224);
+  background-color: rgb(243, 145, 184);
   margin-top: 30px;
   font-family: "PT Serif", serif;
 }
@@ -10,26 +10,32 @@ body {
 h1 {
   font-size: 28px;
   text-align: center;
-  color: rgb(143, 145, 247);
-  text-shadow: 1px 2px 2px black;
+  color: rgb(186, 162, 255);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.6);
 }
 
 h2 {
-  font-size: 25px;
-  color: rgb(143, 145, 247);
-  text-shadow: 1px 2px 2px rgb(0, 0, 0);
+  font-size: 40px;
+  color: rgb(186, 162, 255);
+  text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.6);
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
-p {
-  font-size: 15px;
-  margin-top: 5px;
-}
-
 footer {
-  margin-top: 10px;
+  margin: 20px 10px 10px;
+  padding: 10px;
+  border-top: 1px solid;
   font-size: 12px;
   text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+a {
+  color: rgb(186, 162, 255);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.3);
 }
 
 .weather-app-container {
@@ -39,4 +45,79 @@ footer {
   max-width: 600px;
   padding: 10px 20px 20px 20px;
   border-radius: 20px;
+}
+
+.city-input {
+  font-size: 15px;
+  width: 80%;
+  padding: 10px;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.input-button {
+  background-color: rgb(243, 145, 184);
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 10%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.3);
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.emoji-temperature-container {
+  display: flex;
+  padding: 10px;
+}
+
+.weather-emoji {
+  margin-top: 10px;
+  font-size: 45px;
+}
+
+.temperature {
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.temperature-unit {
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.weather-info {
+  font-size: 15px;
+  margin-top: 5px;
+  line-height: 25px;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+.wind {
+  color: rgb(243, 145, 184);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+
+.humidity {
+  color: rgb(243, 145, 184);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
 }
