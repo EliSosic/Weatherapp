@@ -9,12 +9,10 @@ function updateWeather (response) {
     let dateElement = document.querySelector ("#date");
     let date = new Date(response.data.time * 1000);
 
-//console.log(response.data);
+
 
     cityElement.innerHTML = response.data.city;
-
     dateElement.innerHTML = formatDate(date);
-   
     conditionsElement.innerHTML = response.data.condition.description;
     temperatureElement.innerHTML = Math.round(temperature);
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
