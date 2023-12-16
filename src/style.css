@@ -80,19 +80,21 @@ a {
 .weather-emoji {
   margin-top: 10px;
   font-size: 45px;
+  max-width: 90%;
+  text-align: center;
 }
 
 .temperature {
-  margin-top: 15px;
-  font-size: 40px;
+  margin-top: 30px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
 .temperature-unit {
-  margin-top: 15px;
-  font-size: 40px;
+  margin-top: 30px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.5);

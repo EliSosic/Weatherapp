@@ -9,7 +9,10 @@ function updateWeather (response) {
     let dateElement = document.querySelector ("#date");
     let date = new Date(response.data.time * 1000);
 
+    let weatherEmojiElement = document.querySelector("#weather-emoji");
+    weatherEmojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-emoji" />`;
 
+    // console.log(response.data);
 
     cityElement.innerHTML = response.data.city;
     dateElement.innerHTML = formatDate(date);
