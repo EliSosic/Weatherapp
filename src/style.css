@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   color: rgb(186, 162, 255);
   text-shadow: 1px 2px 2px rgb(0, 0, 0, 0.6);
   margin-top: 0px;
@@ -141,3 +141,29 @@ a {
   color: white;
   text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
 }
+
+
+.weather-forecast {
+ display: flex;
+ justify-content: space-around;
+  color: white;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+  margin: 17px;
+  padding-top: 17px;
+  border-top: 1px solid;
+}
+
+.weather-forecast-day {
+ color: rgb(243, 145, 184);
+  font-size: 18px;
+}
+
+.weather-forecast-temperature-max {
+  font-size: 15px;
+}
+
+.weather-forecast-temperature-min {
+  font-size: 15px;
+  opacity: 0.8;
+}
+

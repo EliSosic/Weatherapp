@@ -12,7 +12,7 @@ function updateWeather (response) {
     let weatherEmojiElement = document.querySelector("#weather-emoji");
     weatherEmojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-emoji" />`;
 
-    // console.log(response.data);
+ // console.log(response.data);
 
     cityElement.innerHTML = response.data.city;
     dateElement.innerHTML = formatDate(date);
