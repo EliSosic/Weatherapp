@@ -156,6 +156,7 @@ a {
 .weather-forecast-day {
  color: rgb(243, 145, 184);
   font-size: 18px;
+  text-align: center;
 }
 
 .weather-forecast-temperature-max {
