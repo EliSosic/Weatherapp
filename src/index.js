@@ -20,6 +20,9 @@ function updateWeather (response) {
     temperatureElement.innerHTML = Math.round(temperature);
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     windElement.innerHTML = `${Math.round(windSpeed)} km/h`;
+
+    getForecast(response.data.city);
+
 }
 
 function formatDate (date) {
@@ -50,7 +53,19 @@ function handleSearchSubmit (event) {
     searchCity(searchInput.value);
 }
 
-function displayForecast () {
+function getForecast (city) {
+    let apiKey = "3c836392eab01t60930bboe42ecabfe4";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`
+axios(apiUrl).then(displayForecast);
+console.log (apiUrl);
+}
+
+
+
+function displayForecast (response) {
+
+    console.log (response.data);
+
     let days = ["Tue", "Wed", 
     "Thu", "Fri", "Sat"];
     let forecastHtml = "";
@@ -81,5 +96,5 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Trieste");
 
-displayForecast ();
+
 
